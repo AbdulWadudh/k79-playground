@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev  --concurrency 11",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
+    "resetCache": "rm -rf ./node_modules/.cache/turbo",
+    "clean": "rm -rf ./apps/echo/node_modules && rm -rf ./apps/echo/dist && rm -rf ./node_modules && bun install",
+    "db:push": "cd packages/database && bunx prisma db push",
+    "db:pull": "cd packages/database && bunx prisma db pull",
+    "db:generate": "cd packages/database && bunx prisma db generate",
+    "db:studio": "cd packages/database && bunx prisma studio",
+    "postinstall": "cd packages/database && bunx prisma generate"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "tsconfig": "workspace:*",
+    "turbo": "latest"
+  },
+  "name": "k79-playground",
+  "packageManager": "bun@1.0.7",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {}
+}

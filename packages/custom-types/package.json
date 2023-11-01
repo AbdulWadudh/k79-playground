@@ -1,0 +1,13 @@
+{
+  "name": "custom-types",
+  "module": "index.d.ts",
+  "type": "module",
+  "types": "index.d.ts",
+  "main": "index.d.ts",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

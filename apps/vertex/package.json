@@ -1,0 +1,24 @@
+{
+  "name": "vertex",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts --port 4000",
+    "start": "bun run src/index.ts --port 4000"
+  },
+  "dependencies": {
+    "@bogeychan/elysia-logger": "^0.0.12",
+    "@elysiajs/cors": "^0.7.1",
+    "@elysiajs/static": "^0.7.1",
+    "@elysiajs/swagger": "^0.7.4",
+    "custom-config-data": "workspace:*",
+    "custom-types": "workspace:*",
+    "custom-utils": "workspace:*",
+    "database": "workspace:*",
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}

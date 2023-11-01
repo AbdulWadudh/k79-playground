@@ -1,0 +1,15 @@
+{
+  "editor.fontFamily": "Operator Mono,'Cascadia Mono', monospace",
+  "editor.tabSize": 2,
+  "prettier.printWidth": 110,
+  "prettier.endOfLine": "auto",
+  "prettier.jsxSingleQuote": true,
+  "prettier.quoteProps": "consistent",
+  "prettier.singleQuote": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  }
+}
